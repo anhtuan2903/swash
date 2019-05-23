@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+/* ----THEME---- */
+:root{
+    --background1: #FFFFFF;
+    --background2: #FFFFFF;
+    --background3: rgb(244, 247, 246);
+    --background4: grey;
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(23, 25, 28);
+    --color3: black;
+}
+
+.leftnav{
+    background: var(--background1);
+    color: var(--color1);
+}
+
+.topnav{
+    background: var(--background2);
+    color: var(--color2);
+}
+
+.expandnav{
+    background: var(--background4);
+    color: var(--color2);
+}
+
+.content{
+    background: var(--background3);
+    color: var(--color3);
+}
+
+.theme1{
+    background: var(--background1);
+    color: var(--color1);
+}
+
+.theme2{
+    background: var(--background3);
+    color: var(--color3);
+}
+
+
+
+/* PLACEHOLDER */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(90, 112, 195);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(90, 112, 195);
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(90, 112, 195);
+}
+
+
+/* DETAIL SETTING */
+.box{
+    position: relative;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(153, 147, 147, 0.2);
+    /* color: rgb(80, 80, 80); */
+    padding: 10px;
+    margin: 20px 0px;
+    }
+  
+    .boxheading {
+      padding: 5px 10px 10px 10px;
+      border-bottom: 1px solid rgba(207, 207, 207, 0.8);
+      font-weight: 600;
+    }
+  
+    .boxcontent{
+      padding: 10px 20px;
+      overflow-y: auto;
+      height: 400px;
+      overflow-x: none;
+    }
+
+    .boxfooting {
+        padding: 5px 10px 10px 10px;
+        border-top: 1px solid rgba(207, 207, 207, 0.8);
+        font-weight: 600; 
+    }
+
+/* REGULAR LABEL */
+.label-finish{
+    color: green;
+    border: 1px solid green;
+    border-radius: 2px;
+    max-width: 80px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-stop{
+    color: red;
+    border: 1px solid red;
+    border-radius: 2px;
+    max-width: 80px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-warning{
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 2px;
+    max-width: 80px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-default{
+    color: rgb(56, 56, 248);
+    border: 1px solid rgb(56, 56, 248);
+    border-radius: 2px;
+    max-width: 80px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

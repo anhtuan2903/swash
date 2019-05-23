@@ -1,0 +1,20 @@
+<div>Need fix: <br> 
+  -Add icons <br> 
+  -Editable task <br>
+</div>
+
+<div>
+<input type="text" id="task-input" #newtask (keyup.enter)="onEnter(newtask.value)" [(ngModel)]="task" placeholder="Task to do ..." >
+</div>
+
+<div cdkDropList class="task-list" (cdkDropListDropped)="drop($event)">
+    <div class="task-item" *ngFor="let task of tasklist" cdkDrag>
+      <div class="tick">
+        <span>Tick icon</span>
+      </div>
+      <div class="col-sm-10">{{task}}</div>
+      <div class="del">
+        <span>Del icon</span>
+      </div>
+    </div>
+</div>

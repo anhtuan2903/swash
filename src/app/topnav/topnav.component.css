@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.topnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 3;
+    display: flex;
+    border-bottom: 2px solid rgba(90, 112, 195, 0.5);
+}
+
+/* TOPNAV SETTING */
+
+.topnav input {
+    outline: none;
+    padding: 6px;
+    margin: auto 10px;
+    height: 34px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid rgb(90, 112, 195);
+    border-radius: 5px;
+    color: rgb(90, 112, 195);
+}
+
+.topnav input:focus{
+    box-shadow: 0px 0px 4px rgb(90, 112, 195);
+}
+
+.topnav button, .topnav button:focus {
+    outline: none;
+    height: 30px;
+    width: 30px;
+    margin: 15px 0px 15px 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(90, 112, 195);
+}
+
+.topnav button:hover {
+    background: rgb(90, 112, 195);
+    color: white;
+}
+
+#brand{
+    margin: 0;
+    height: 60px;
+    width: 60px;
+}
+
+#brandname{
+    height: 60px;
+    width: 100px;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: rgb(90, 112, 195);
+    text-decoration: none;
+}
