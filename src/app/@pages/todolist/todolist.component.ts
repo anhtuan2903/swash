@@ -15,14 +15,14 @@ export class TodolistComponent implements OnInit {
   task: string;
 
   tasklist = [
-    'Episode I - The Phantom Menaceádsađasađá  ád adấd  áda da đa a sđấ đa sd ád',
-    'Episode II - Attack of the Clones',
-    'Episode III - Revenge of the Sith',
-    'Episode IV - A New Hope',
-    'Episode V - The Empire Strikes Back',
-    'Episode VI - Return of the Jedi',
-    'Episode VII - The Force Awakens',
-    'Episode VIII - The Last Jedi'
+    'Check me out',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim temporibus quos quibusdam animi aut sit, reiciendis libero odit ipsum?',
+    'Get in touch with my team',
+    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, distinctio.',
+    'Write email to business cat',
+    'Have fun with this list',
+    'What do you think?',
+    'Tomorrow morning meeting with Manager about salary increase'
   ];
 
   onEnter(task: string){

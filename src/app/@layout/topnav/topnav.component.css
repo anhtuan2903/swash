@@ -66,3 +66,9 @@
     background: rgb(90, 112, 195);
     text-decoration: none;
 }
+
+#searchicon{
+    height: 34px;
+    width: 34px;
+    padding: 0px;
+}
