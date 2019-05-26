@@ -5,11 +5,15 @@ import { TodolistComponent } from '../@pages/todolist/todolist.component';
 import { EmployeeComponent } from '../@pages/employee/employee.component';
 import { ProjectcontrolComponent } from '../@pages/projectcontrol/projectcontrol.component';
 import { AttendanceComponent } from '../@pages/attendance/attendance.component';
+import { DashboardComponent } from '../@pages/dashboard/dashboard.component';
+import { PathComponent } from '../@pages/path/path.component';
 
 const routes: Routes = [
-  { path: ' ', component: ProjectcontrolComponent},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   { path: 'todolist', component: TodolistComponent },
-  { path: 'path', component: EmployeeComponent },
+  { path: 'path', component: PathComponent },
+  { path: 'employee', component: EmployeeComponent },
   { path: 'manhour', component: AttendanceComponent }
 ];
 

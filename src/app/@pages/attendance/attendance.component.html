@@ -1,17 +1,19 @@
 <table>
-  <thead >
-    <tr *ngFor="let day of days">
-      <th>{{day}}</th>
+  <thead>
+    <tr>
+      <td *ngFor="let day of days">{{day}}</td>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>John</td>
-      <td>OK</td>
-      <td>OK</td>
-      <td>OK</td>
-      <td>OK</td>
-
+    <tr *ngFor="let data of ATTENDANCE_DATA">
+      <td>{{data.id}}</td>
+      <td>{{data.attendance}}</td>
+      <td><button mat-button (click)="checkthis()"><mat-icon>{{this.iconnames}}</mat-icon></button></td>
+      <td>{{data.attendance}}</td>
+      <td>{{data.attendance}}</td>
+      <td>{{data.attendance}}</td>
+      <td>{{data.attendance}}</td>
     </tr>
   </tbody>
+  
 </table>

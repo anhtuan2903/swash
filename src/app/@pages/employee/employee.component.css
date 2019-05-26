@@ -2,6 +2,34 @@ table {
     width: 100%;
   }
 
-  th.mat-sort-header-sorted {
-    color: black;
+  th, .heading{
+    background: #343A40;
+    color: white;
   }
+  .mat-sort-header-arrow{
+    color: white;
+  }
+  th.mat-sort-header-sorted {
+    color: white;
+  }
+
+  tr:nth-child(even){
+    background: #f1f1f1;
+  }
+
+.mat-elevation-z8{
+  margin: 20px 0px;
+}
+
+.heading{
+  padding: 10px;
+  font-size: 20px;
+}
+
+mat-form-field{
+  margin: 0px 5px;
+}
+
+button{
+  margin: 0px 5px;
+}

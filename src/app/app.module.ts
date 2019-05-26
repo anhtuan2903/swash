@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './@layout/topnav/topnav.component';
-import { LeftnavComponent } from './@layout/leftnav/leftnav.component';
+import { LeftnavComponent } from './@layout/leftnav/leftnav.component';``
 import { ContentComponent } from './content/content.component';
 import { TodolistComponent } from './@pages/todolist/todolist.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,9 +13,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AttendanceComponent } from './@pages/attendance/attendance.component';
 import { EmployeeComponent } from './@pages/employee/employee.component';
 import { MatTableModule} from '@angular/material/table';
-import { MatInputModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { MatInputModule, MatPaginatorModule, MatSortModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { ProjectcontrolComponent } from './@pages/projectcontrol/projectcontrol.component';
 import { PageRoutingModule } from './content/page-routing.module';
+import { DashboardComponent } from './@pages/dashboard/dashboard.component';
+import { PathComponent } from './@pages/path/path.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { PageRoutingModule } from './content/page-routing.module';
     TodolistComponent,
     AttendanceComponent,
     EmployeeComponent,
-    ProjectcontrolComponent
+    ProjectcontrolComponent,
+    DashboardComponent,
+    PathComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,10 @@ import { PageRoutingModule } from './content/page-routing.module';
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
-    PageRoutingModule
+    PageRoutingModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
