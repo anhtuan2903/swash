@@ -16,7 +16,7 @@ export class TodolistComponent implements OnInit {
 
   tasklist = [
     'Check me out',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim temporibus quos quibusdam animi aut sit, reiciendis libero odit ipsum?',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Get in touch with my team',
     'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, distinctio.',
     'Write email to business cat',

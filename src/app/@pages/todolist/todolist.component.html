@@ -1,8 +1,9 @@
 <div>Need fix: <br> 
   -Add icons <br> 
   -Editable task <br>
+  - Why this shit can not use material icons? <br>
 </div>
-
+<mat-icon>check_circle_outline</mat-icon>
 <div>
 <input type="text" id="task-input" #newtask (keyup.enter)="onEnter(newtask.value)" [(ngModel)]="task" placeholder="Task to do ..." >
 </div>
@@ -10,11 +11,11 @@
 <div cdkDropList class="task-list" (cdkDropListDropped)="drop($event)">
     <div class="task-item" *ngFor="let task of tasklist" cdkDrag>
       <div class="tick">
-        <span>Tick icon</span>
+        <span><i class="material-icons">done</i></span> 
       </div>
       <div class="col-sm-10">{{task}}</div>
       <div class="del">
-        <span>Del icon</span>
+        <span><i class="material-icons">clear</i></span>
       </div>
     </div>
 </div>

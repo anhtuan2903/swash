@@ -27,7 +27,7 @@ export class AttendanceComponent implements OnInit {
 
   checkthis(){
     if(this.iconnames = "done"){
-      this.iconnames = "home";
+      this.iconnames = "clear";
     }
     else{
       this.iconnames = "done";

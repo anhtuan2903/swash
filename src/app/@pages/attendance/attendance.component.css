@@ -1,9 +1,23 @@
 table {
-    border: 1px solid black;
     width: 100%;
 }
+    td:first-child{
+        text-align: initial !important;
+    }
 
-th, td {
-    border: 1px solid black;
-    width: 5px;
-}
+    td{
+        text-align: center;
+    }
+    
+    tr{
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .names{
+        width: 200px !important ;
+    }
+
+    .days{
+        width: 30px !important ;
+    }
+
