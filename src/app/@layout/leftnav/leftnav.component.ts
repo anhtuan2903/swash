@@ -14,7 +14,7 @@ export class LeftnavComponent implements OnInit {
   ngOnInit() {
   }
   pages = [
-    {title:'Dashboard', link: ' ', icon:'search-outline'},
+    {title:'Dashboard', link: '/dashboard', icon:'search-outline'},
     {title:'Schedule', link: '/schedule', icon:'search-outline'},
     {title:'Path', link: '/path', icon:'search-outline'},
     {title:'Employee Manager', link: '/employee', icon:'search-outline'},

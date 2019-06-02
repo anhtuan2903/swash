@@ -33,4 +33,13 @@ export class TodolistComponent implements OnInit {
   drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.tasklist, event.previousIndex, event.currentIndex);
   }
+
+  name: string;
+  tick(){
+    this.name = "tick";
+  }
+
+  trash(){
+
+  }
 }
