@@ -35,11 +35,19 @@ export class TodolistComponent implements OnInit {
   }
 
   name: string;
-  tick(){
+  tick(task: string){
+    const indexnum: number = this.tasklist.indexOf(task);
     this.name = "tick";
   }
 
-  trash(){
+  trash(task: string){
+    const indexnum: number = this.tasklist.indexOf(task);
+    // if (indexnum !== -1) {
+      this.tasklist.splice(indexnum,1);
+    // }
+  }
 
+  getdata(){
+    return this.task;
   }
 }

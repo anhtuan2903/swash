@@ -38,7 +38,10 @@ button{
   overflow-y: auto;
   overflow-x: none;
 }
-  
+  div > mat-icon {
+    cursor: pointer;
+  }
+
   .task-item {
     padding: 10px 10px;
     border-bottom: solid 1px #ccc;
@@ -48,10 +51,11 @@ button{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    cursor: move;
     background: white;
   }
-  
+  .task-item > .col-sm-10 {
+    cursor: move;
+  }
   .task-item:hover{
 
   }
