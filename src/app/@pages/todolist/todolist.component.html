@@ -7,10 +7,44 @@
 <input type="text" id="task-input" #newtask (keyup.enter)="onEnter(newtask.value)" [(ngModel)]="task" placeholder="Task to do ..." >
 </div>
 
-<div cdkDropList class="task-list" (cdkDropListDropped)="drop($event)">
-    <div class="task-item" *ngFor="let task of tasklist" cdkDrag>
+<!-- <div cdkDropList class="task-list" #todolist="cdkDroplist" [cdkDropListConnectedTo]="[workinglist]" (cdkDropListDropped)="drop($event)"> 
+  <div class="task-item" *ngFor="let task of tasklist" cdkDrag>
+    <div (click)="tick(task.value)"><mat-icon>done</mat-icon></div>  
+    <div class="col-sm-10 {{name}}">{{task}}</div>
+    <div (click)="trash(task.value)"><mat-icon>cancel</mat-icon></div>  
+  </div> 
+</div>
+
+<div cdkDropList class="task-list" #workinglist="cdkDropList" [cdkDropListConnectedTo]="[todolist]" (cdkDropListDropped)="drop($event)"> 
+    <div class="task-item" *ngFor="let task of workinglist" cdkDrag>
       <div (click)="tick(task.value)"><mat-icon>done</mat-icon></div>  
       <div class="col-sm-10 {{name}}">{{task}}</div>
       <div (click)="trash(task.value)"><mat-icon>cancel</mat-icon></div>  
+    </div> 
+  </div> -->
+
+  <div cdkDropListGroup>
+      <div class="container-box">
+        <div class="container-heading">To do</div>
+
+        <div cdkDropList [cdkDropListData]="todo" class="container-list" (cdkDropListDropped)="drop($event)">
+          <div class="container-item" contenteditable="true" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+
+      <div class="container-box">
+        <div class="container-heading">Working</div>
+      
+        <div cdkDropList [cdkDropListData]="working" class="container-list" (cdkDropListDropped)="drop($event)">
+          <div class="container-item" contenteditable="true" *ngFor="let item of working" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+
+      <div class="container-box">
+        <div class="container-heading">Finished</div>
+    
+        <div cdkDropList [cdkDropListData]="finished" class="container-list" (cdkDropListDropped)="drop($event)">
+          <div class="container-item" contenteditable="true" *ngFor="let item of finished" cdkDrag>{{item}}</div>
+        </div>
+      </div>
     </div>
-</div>

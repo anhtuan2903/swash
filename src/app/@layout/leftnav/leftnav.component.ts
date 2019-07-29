@@ -15,10 +15,11 @@ export class LeftnavComponent implements OnInit {
   }
   pages = [
     {title:'Dashboard', link: '/dashboard', icon:'search-outline'},
+    {title:'Project', link: '/project', icon:'search-outline'},
     {title:'Schedule', link: '/schedule', icon:'search-outline'},
     {title:'Path', link: '/path', icon:'search-outline'},
     {title:'Employee Manager', link: '/employee', icon:'search-outline'},
-    {title:'Manhour', link: '/manhour', icon:'search-outline'},
+    {title:'Attendance', link: '/attendance', icon:'search-outline'},
     {title:'To do list', link: '/todolist', icon:'search-outline'}
   ]
 }

@@ -3,19 +3,31 @@ table {
   }
 
   th, .heading{
-    background: #343A40;
+    background: rgb(63, 68, 73);
     color: white;
   }
+
   .mat-sort-header-arrow{
     color: white;
+    opacity: 1;
   }
+
   th.mat-sort-header-sorted {
     color: white;
   }
 
-  tr:nth-child(even){
-    background: #f1f1f1;
+  tr:hover{
+    background: #f5f5f5;
   }
+  
+  td.mat-cell, td.mat-footer-cell, th.mat-header-cell{
+    border-right: solid 1px rgb(189, 189, 190);
+    padding: 0px 10px;
+  }
+  
+  /* tr:nth-child(even){
+    background: #f5f5f5;
+  } */
 
 .mat-elevation-z8{
   margin: 20px 0px;

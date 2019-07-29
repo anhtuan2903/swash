@@ -63,7 +63,7 @@ export class EmployeeComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  newseqno = this.dataSource.data.length + 1;
+  // newseqno = this.dataSource.data.length + 1;
 
 }
 

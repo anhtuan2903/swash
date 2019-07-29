@@ -10,10 +10,10 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 52px;
     z-index: 3;
     display: flex;
-    border-bottom: 2px solid rgba(90, 112, 195, 0.5);
+    border-bottom: 1px solid rgba(90, 112, 195, 0.5);
 }
 
 /* TOPNAV SETTING */
@@ -22,7 +22,7 @@
     outline: none;
     padding: 6px;
     margin: auto 10px;
-    height: 34px;
+    height: 32px;
     width: 200px;
     font-size: 16px;
     border: 1px solid rgb(90, 112, 195);
@@ -36,8 +36,8 @@
 
 .topnav button, .topnav button:focus {
     outline: none;
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     margin: 15px 0px 15px 0px;
     background: none;
     border: none;
@@ -50,22 +50,29 @@
     color: white;
 }
 
-#brand{
-    margin: 0;
-    height: 60px;
-    width: 60px;
+.brand-block{
+    width: 200px;
+    height: 52px;
 }
+    #brand{
+        margin: 0;
+        height: 100%;
+        width: 80px;
+    }
 
-#brandname{
-    height: 60px;
-    width: 100px;
-    padding: 12px 15px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    background: rgb(90, 112, 195);
-    text-decoration: none;
-}
+    #brandname{
+        height: 52px;
+        width: 100px;
+        margin: 0px;
+        padding: 15px 15px;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        vertical-align: center;
+        color: #FFFFFF;
+        background: rgb(90, 112, 195);
+        text-decoration: none;
+    }
 
 #searchicon{
     height: 34px;

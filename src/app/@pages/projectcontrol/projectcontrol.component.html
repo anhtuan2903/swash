@@ -1,4 +1,4 @@
-<div class="box">
+<!-- <div class="box">
     <div class="boxheading">Project control</div>
     <div class="boxcontent">
         <table id="box1">
@@ -69,8 +69,29 @@
             </tfoot>
         </table>
     </div>
-    <div>Need fix: <br> 
-      -Deadline <br> 
-      -Responsive project click <br> 
-  </div>
+
+</div> -->
+
+<div class="box">
+    <table>
+    <thead>
+        <th> No. </th>
+        <th> Name </th>
+        <th> Progress </th>
+        <th> Team </th>
+        <th> Deadline </th>
+        <th> Status </th>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let data of datasource">
+            <th>{{data.seqno}}</th>
+            <th>{{data.nameproject}}</th>
+            <th>{{data.progress}}</th>
+            <th>{{data.team}}</th>
+            <th>{{data.deadline}}</th>
+            <th>{{data.status}}</th>
+        </tr>
+        
+    </tbody>
+</table>
 </div>

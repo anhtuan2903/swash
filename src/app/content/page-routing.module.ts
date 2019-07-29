@@ -10,10 +10,11 @@ import { PathComponent } from '../@pages/path/path.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+  { path: 'project', component: ProjectcontrolComponent },
   { path: 'todolist', component: TodolistComponent },
   { path: 'path', component: PathComponent },
   { path: 'employee', component: EmployeeComponent },
-  { path: 'manhour', component: AttendanceComponent }
+  { path: 'attendance', component: AttendanceComponent }
 ];
 
 @NgModule({

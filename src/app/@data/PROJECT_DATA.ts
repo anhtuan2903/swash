@@ -1,22 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { PROJECT } from './PROJECT';
 
-import { PROJECT_DATA } from 'src/app/@data/PROJECT_DATA';
-
-@Component({
-  selector: 'app-projectcontrol',
-  templateUrl: './projectcontrol.component.html',
-  styleUrls: ['./projectcontrol.component.css']
-})
-export class ProjectcontrolComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  datasource : [] = [
+export const PROJECT_DATA = [
     {seqno: 1, nameproject: 'iNext - One Page Responsive Template', progress: '80%', team: 'RD0001', deadline: '1478708162000', status: ' Finished'},
     {seqno: 2, nameproject: 'InfiniO 4.1', progress: '40%', team: 'RD0002', deadline: '1478708162000', status: ' Working'},
     {seqno: 3, nameproject: 'iNext - One Page Responsive Template', progress: '50%', team: 'RD0008', deadline: '1478708162000', status: ' Working'}
-  ];
-}
+]
