@@ -1,6 +1,6 @@
 import { EMPLOYEE } from './EMPLOYEE';
 
-export const EMPLOYEE_DATA = [
+export const EMPLOYEE_DATA: EMPLOYEE[] = [
     {seqno: 1, name: 'Nguyen Tuan Anh', sex: 'Male', employeeid: 'RD0001', age: '26', role: ' Electrical Engineer', joindate: 'Dec 2016', exp: '2years 6month' },
     {seqno: 2, name: 'Dang Vien Du', sex: 'Male', employeeid: 'RD0002', age: '25', role: ' Mechanical Engineer', joindate: 'Dec 2016', exp: '2years 6month'},
     {seqno: 3, name: 'Dao Duc Thang', sex: 'Male', employeeid: 'RD0008', age: '26', role: ' Mechanical Engineer', joindate: 'Dec 2016', exp: '2years 6month'},

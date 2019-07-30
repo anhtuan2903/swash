@@ -18,6 +18,7 @@ import { ProjectcontrolComponent } from './@pages/projectcontrol/projectcontrol.
 import { PageRoutingModule } from './content/page-routing.module';
 import { DashboardComponent } from './@pages/dashboard/dashboard.component';
 import { PathComponent } from './@pages/path/path.component';
+import { EmployeeDetailComponent } from './@pages/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PathComponent } from './@pages/path/path.component';
     EmployeeComponent,
     ProjectcontrolComponent,
     DashboardComponent,
-    PathComponent
+    PathComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

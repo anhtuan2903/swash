@@ -6,6 +6,7 @@ import { ProjectcontrolComponent } from '../@pages/projectcontrol/projectcontrol
 import { AttendanceComponent } from '../@pages/attendance/attendance.component';
 import { DashboardComponent } from '../@pages/dashboard/dashboard.component';
 import { PathComponent } from '../@pages/path/path.component';
+import { EmployeeDetailComponent } from '../@pages/employee-detail/employee-detail.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'todolist', component: TodolistComponent },
   { path: 'path', component: PathComponent },
   { path: 'employee', component: EmployeeComponent },
-  { path: 'attendance', component: AttendanceComponent }
+  { path: 'attendance', component: AttendanceComponent },
+  { path: 'employee-detail', component: EmployeeDetailComponent }
 ];
 
 @NgModule({
