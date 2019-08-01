@@ -15,20 +15,8 @@ export class EmployeeComponent implements OnInit {
   heroes = EMPLOYEE_DATA;
   selectedHero: EMPLOYEE;
 
-  onSelect(hero: EMPLOYEE): void {
-    this.selectedHero = hero;
-  }
-
-  addEmployee(newEmployee: NgForm){
-    console.log(newEmployee.value);
-    // this.EMPLOYEE_DATA.push (newEmployee.value);
-    EMPLOYEE_DATA.push ({seqno: 25, name: 'Huynhasdad Thsad Binh', sex: 'Male', employeeid: 'RD0016', age: '26', role: ' Mold Engineer', joindate: 'Oct 2017', exp: '1years 6month'});
-    this.ngOnInit;
-  }
-
   displayedColumns: string[] = ['seqno', 'name', 'employeeid', 'role', 'joindate', 'age', 'sex', 'exp' ];
   dataSource = new MatTableDataSource(EMPLOYEE_DATA);
-  
 
   constructor(private changeDetectorRefs: ChangeDetectorRef) { }
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
@@ -44,7 +32,30 @@ export class EmployeeComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  // newseqno = this.dataSource.data.length + 1;
+  onSelect(hero: EMPLOYEE): void {
+    this.selectedHero = hero;
+  }
+
+  newseqno: number = this.dataSource.data.length + 1;
+
+  addEmployee(newEmployee: NgForm){
+    // this.EMPLOYEE_DATA.push (newEmployee.value);
+    EMPLOYEE_DATA.push (newEmployee.value);
+
+    this.dataSource = new MatTableDataSource(EMPLOYEE_DATA);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+    this.newseqno = this.newseqno + 1;
+    newEmployee.resetForm();
+    window.alert('New employee has been added');
+  }
+
+
+
+
+
+
+
 
 }
 

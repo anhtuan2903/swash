@@ -10,12 +10,21 @@
     top: 60px;
     left: 0;
     bottom: 0;
-    width: 160px;
+    width: 200px;
     height: 100%;
     z-index: 2;
-    /* display: flex;
-    align-items: flex-start; */
-    border-right: 1px solid rgba(90, 112, 195, 0.5);
+    padding: 0px 10px;
+    /* display: flex;*/
+    /*align-items: flex-start; */
+    /* border-right: 1px solid rgba(90, 112, 195, 0.5); */
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 
+                0px 8px 10px 1px rgba(0, 0, 0, 0.14), 
+                0px 3px 14px 2px rgba(0, 0, 0, 0.12)
+}
+
+.active-link{
+    background: rgb(90, 112, 195);
+    color: rgb(255, 255, 255) !important;
 }
 
 /* LEFTNAV SETTING */
@@ -23,30 +32,27 @@
 .leftnav ul > li {
     list-style: none;
     height: 60px;
-    width: 160px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(90, 112, 195);
+    /* border-bottom: 1px solid rgb(90, 112, 195); */
+    margin: 10px 0px;
+    padding: 15px;
 }
-    .leftnav ul > li > a {
+    .leftnav ul > li {
         text-decoration: none;
         color: rgb(90, 112, 195);
-        align-content: center;
-        text-align: center;
+        /* align-content: center; */
+        /* text-align: center; */
+        cursor: pointer;
     }
-        .leftnav ul > li > a > i{
+        .leftnav ul > li > i{
             height: 60px;
             width: 60px;
             padding: 5px;
-            color: rgb(90, 112, 195);
+            /* color: rgb(90, 112, 195); */
         }
 
         .leftnav ul > li:hover {
-            background: rgb(241, 241, 241);
-            border-right: 4px solid rgba(90, 112, 195, 0.5);
-        }
-
-        .leftnav ul > li > a::selection {
-            background: rgb(241, 241, 241);
-            border-right: 4px solid rgba(90, 112, 195, 0.7);
+            background: rgb(90, 112, 195);
+            color: rgb(255, 255, 255) !important;
         }

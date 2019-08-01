@@ -28,7 +28,10 @@
         <div class="container-heading">To do</div>
 
         <div cdkDropList [cdkDropListData]="todo" class="container-list" (cdkDropListDropped)="drop($event)">
-          <div class="container-item" contenteditable="true" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+          <div class="container-item" contenteditable="true" *ngFor="let item of todo" cdkDrag>
+            {{item}}
+            <!-- <div class="drag-handle" cdkDragHandle></div> -->
+          </div>
         </div>
       </div>
 

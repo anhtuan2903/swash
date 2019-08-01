@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TodolistComponent } from '../@pages/todolist/todolist.component';
-import { EmployeeComponent } from '../@pages/employee/employee.component';
-import { ProjectcontrolComponent } from '../@pages/projectcontrol/projectcontrol.component';
-import { AttendanceComponent } from '../@pages/attendance/attendance.component';
-import { DashboardComponent } from '../@pages/dashboard/dashboard.component';
-import { PathComponent } from '../@pages/path/path.component';
-import { EmployeeDetailComponent } from '../@pages/employee-detail/employee-detail.component';
+import { TodolistComponent } from '../../@pages/todolist/todolist.component';
+import { EmployeeComponent } from '../../@pages/employee/employee.component';
+import { ProjectcontrolComponent } from '../../@pages/projectcontrol/projectcontrol.component';
+import { AttendanceComponent } from '../../@pages/attendance/attendance.component';
+import { DashboardComponent } from '../../@pages/dashboard/dashboard.component';
+import { PathComponent } from '../../@pages/path/path.component';
+import { EmployeeDetailComponent } from '../../@pages/employee-detail/employee-detail.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},

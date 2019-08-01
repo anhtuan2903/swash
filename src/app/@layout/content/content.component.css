@@ -8,14 +8,14 @@
 .content{
     position: absolute;
     top: 60px;
-    left: 160px;
+    left: 200px;
     right: 0;
     padding: 0px 15px;
     z-index: 0; 
     height: 917px;
     overflow-y: auto;
     overflow-x: none;
-    background: #F8F8F8;
+    background: #EAF1F5;
 }
 
 /* SCROLLBAR */

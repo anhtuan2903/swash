@@ -1,9 +1,8 @@
 <div class="leftnav">
-  <ul>
-      <li *ngFor="let p of pages">
-        <a routerLink="{{p.link}}" routerLinkActive="active">
-        <i data-eva="p.icon"></i>{{p.title}}
-      </a>
+  <ul *ngFor="let p of pages">
+      <li routerLink="{{p.link}}" routerLinkActive="active-link">
+      <!-- <i data-eva="p.icon"></i> -->
+      {{p.title}}
     </li>
   </ul> 
 </div>

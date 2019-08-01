@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './@layout/topnav/topnav.component';
 import { LeftnavComponent } from './@layout/leftnav/leftnav.component';``
-import { ContentComponent } from './content/content.component';
+import { ContentComponent } from './@layout/content/content.component';
 import { TodolistComponent } from './@pages/todolist/todolist.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +15,7 @@ import { EmployeeComponent } from './@pages/employee/employee.component';
 import { MatTableModule} from '@angular/material/table';
 import { MatInputModule, MatPaginatorModule, MatSortModule, MatIconModule, MatButtonModule, MatTooltipModule } from '@angular/material';
 import { ProjectcontrolComponent } from './@pages/projectcontrol/projectcontrol.component';
-import { PageRoutingModule } from './content/page-routing.module';
+import { PageRoutingModule } from './@layout/content/page-routing.module';
 import { DashboardComponent } from './@pages/dashboard/dashboard.component';
 import { PathComponent } from './@pages/path/path.component';
 import { EmployeeDetailComponent } from './@pages/employee-detail/employee-detail.component';

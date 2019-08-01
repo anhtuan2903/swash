@@ -56,33 +56,33 @@
   <div class="heading">Input new employee</div>
     <form #newEmployee="ngForm" (ngSubmit)="addEmployee(newEmployee)">
         <mat-form-field>
-            <input matInput placeholder="No" value="{{newseqno}}">
+            <input matInput type ="number" placeholder="No" ngModel name="seqno" min="{{newseqno}}" max="{{newseqno}}" required>
+            <!-- <mat-error *ngIf="('newseqno')?.invalid">Invalid number</mat-error> -->
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Name" ngModel name="name">
+          <input matInput placeholder="Name" ngModel name="name" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Sex" ngModel name="sex">
+          <input matInput placeholder="Sex" ngModel name="sex" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Employee ID" ngModel name="employeeid">
+          <input matInput placeholder="Employee ID" ngModel name="employeeid" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Age" ngModel name="age">
+          <input matInput type ="number" placeholder="Age" ngModel name="age" min="18" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Role" ngModel name="role">
+          <input matInput placeholder="Role" ngModel name="role" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Join date" ngModel name="joindate">
+          <input matInput placeholder="Join date" ngModel name="joindate" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Experience" ngModel name="exp">
+          <input matInput placeholder="Experience" ngModel name="exp" required>
         </mat-form-field>
-      <button mat-raised-button >Add</button>
+      <button mat-raised-button [disabled]="!newEmployee.valid">Add</button>
     </form>
 </div>
-<h4>Fix: add employee data</h4>
 <p>Form value: {{ newEmployee.value | json }}</p>
 
 <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
