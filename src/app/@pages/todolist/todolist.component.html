@@ -1,8 +1,4 @@
-<div>Need fix: <br> 
-  -Change icons when click <br> 
-  -Editable task <br>
-  -Delete and update list
-</div>
+
 <div>
 <input type="text" id="task-input" #newtask (keyup.enter)="onEnter(newtask.value)" [(ngModel)]="task" placeholder="Task to do ..." >
 </div>
@@ -50,4 +46,10 @@
           <div class="container-item" contenteditable="true" *ngFor="let item of finished" cdkDrag>{{item}}</div>
         </div>
       </div>
+    </div>
+
+    <div>Need fix: <br> 
+      -Change icons when click <br> 
+      -Editable task <br>
+      -Delete and update list
     </div>

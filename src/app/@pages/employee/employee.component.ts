@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { MatSort, MatPaginator, MatTableDataSource} from '@angular/material';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { EMPLOYEE_DATA } from 'src/app/@data/EMPLOYEE_DATA';
 import { EMPLOYEE } from 'src/app/@data/EMPLOYEE';
-
+import { EmployeeDetailComponent } from '../employee-detail/employee-detail.component';
 
 @Component({
   selector: 'app-employee',
@@ -48,6 +48,7 @@ export class EmployeeComponent implements OnInit {
     this.newseqno = this.newseqno + 1;
     newEmployee.resetForm();
     window.alert('New employee has been added');
+
   }
 
 

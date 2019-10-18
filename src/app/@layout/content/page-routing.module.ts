@@ -7,12 +7,14 @@ import { AttendanceComponent } from '../../@pages/attendance/attendance.componen
 import { DashboardComponent } from '../../@pages/dashboard/dashboard.component';
 import { PathComponent } from '../../@pages/path/path.component';
 import { EmployeeDetailComponent } from '../../@pages/employee-detail/employee-detail.component';
+import { ScheduleComponent } from '../../@pages/schedule/schedule.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   { path: 'project', component: ProjectcontrolComponent },
   { path: 'todolist', component: TodolistComponent },
+  { path: 'schedule', component: ScheduleComponent },
   { path: 'path', component: PathComponent },
   { path: 'employee', component: EmployeeComponent },
   { path: 'attendance', component: AttendanceComponent },

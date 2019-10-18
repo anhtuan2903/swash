@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AppComponent } from '../../app.component';
-import { TodolistComponent } from '../../@pages/todolist/todolist.component';
 
 @Component({
   selector: 'app-leftnav',

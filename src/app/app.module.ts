@@ -19,6 +19,7 @@ import { PageRoutingModule } from './@layout/content/page-routing.module';
 import { DashboardComponent } from './@pages/dashboard/dashboard.component';
 import { PathComponent } from './@pages/path/path.component';
 import { EmployeeDetailComponent } from './@pages/employee-detail/employee-detail.component';
+import { ScheduleComponent } from './@pages/schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EmployeeDetailComponent } from './@pages/employee-detail/employee-detai
     ProjectcontrolComponent,
     DashboardComponent,
     PathComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

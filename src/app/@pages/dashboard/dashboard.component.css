@@ -1,32 +1,23 @@
-/* DETAIL SETTING */
-.box{
-    position: relative;
-    /* border-radius: 5px; */
-    background: white;
-    padding: 10px;
-    margin: 20px 10px;
-    /* border: solid 1px #ccc; */
-    overflow: hidden;
-    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 
-                0px 8px 10px 1px rgba(0, 0, 0, 0.14), 
-                0px 3px 14px 2px rgba(0, 0, 0, 0.12)
-}
-  
-.boxheading {
-      padding: 5px 10px 10px 10px;
-      border-bottom: 1px solid rgba(207, 207, 207, 0.8);
-      font-weight: 600;
-}
-  
-.boxcontent{
-      padding: 10px 20px;
-      overflow-y: auto;
-      height: 400px;
-      overflow-x: none;
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto';
 }
 
-.boxfooting {
-        padding: 5px 10px 10px 10px;
-        border-top: 1px solid rgba(207, 207, 207, 0.8);
-        font-weight: 600; 
+.row{
+      margin-bottom: 20px;
 }
+
+.box{
+      position: relative;
+      /* border-radius: 5px; */
+      background: white;
+      /* padding: 10px;
+      margin: 20px 10px; */
+      /* border: solid 1px #ccc; */
+      /* overflow: hidden; */
+      box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 
+                  0px 8px 10px 1px rgba(0, 0, 0, 0.14), 
+                  0px 3px 14px 2px rgba(0, 0, 0, 0.12)
+  }

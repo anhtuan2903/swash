@@ -1,11 +1,59 @@
-<div *ngIf="employeedata">
-
-  <h2>{{employeedata.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{employeedata.seqno}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="employeedata.name" placeholder="name"/>
-    </label>
+<!-- <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <h4>Developers are working fucking hard!</h4>
+</div> -->
+<div class="row">
+  <div class="col-xl-3">
+    <div class="box">
+      <div class="infoheading">
+        <img src="/assets/img/avatar2.jpg" class="avatar-big">
+        <h4>Bui Anh Tuan</h4> 
+        <p>Role: Staff</p>
+        <p>ID: RD0019</p>
+      </div>
+      <div class="boxcontent">
+          <p>Sex: Male</p> 
+          <p>Age: 26</p>
+          <p>Role: Electrical Engineer </p> 
+          <p>Joindate: Dec 2016</p> 
+          <p>Experiences: 2years 6month</p>
+          <p>Email: tuan.buianh@nidec.com</p> 
+          <p>Phone: +84 123 456 789</p> 
+          <p>Address: Nasdmandadamdad asd,smads,ad</p>   
+      </div>
+    </div>
   </div>
-
-</div>
+  <div class="col-xl-9">
+    <div class="box">
+      <div class="boxheading">
+        <a href="/project-detail">i611</a> 
+      </div>
+      <div class="boxcontent">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus necessitatibus libero cupiditate! 
+        Quaerat ipsa odit totam facere nihil natus ducimus reiciendis exercitationem, quis, 
+        distinctio cumque necessitatibus inventore sint veritatis at!
+      </div>
+    </div>
+    <div class="box">
+        <div class="boxheading">
+        <a href="/project-detail">i611</a> 
+        </div>
+        <div class="boxcontent">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus necessitatibus libero cupiditate! 
+          Quaerat ipsa odit totam facere nihil natus ducimus reiciendis exercitationem, quis, 
+          distinctio cumque necessitatibus inventore sint veritatis at!
+        </div>
+      </div>
+      <div class="box">
+          <div class="boxheading">
+            <a href="/project-detail">i611</a> 
+          </div>
+          <div class="boxcontent">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus necessitatibus libero cupiditate! 
+            Quaerat ipsa odit totam facere nihil natus ducimus reiciendis exercitationem, quis, 
+            distinctio cumque necessitatibus inventore sint veritatis at!
+          </div>
+        </div>
+  </div>
+</div>  
